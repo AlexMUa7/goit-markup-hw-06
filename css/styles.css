@@ -31,20 +31,40 @@ img {
   display: block;
 }
 
+.link {
+  text-decoration: none;
+}
+
+input,
+textarea {
+  outline: transparent;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .section {
   padding: 94px 0;
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
 }
-.page-footer {
-  background-color: #2f303a;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
+.section-title {
+  color: #212121;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-top: 0%;
+  margin-bottom: 10px;
 }
+
+/*Logo*/
 
 .logo {
   color: var(--accent-color);
@@ -56,7 +76,7 @@ img {
   margin-right: 93px;
 }
 
-.logo-header {
+.page-header__logo {
   color: var(--title-text-color);
   font-family: Raleway;
   font-weight: 700;
@@ -130,6 +150,25 @@ img {
   color: var(--accent-color);
 }
 
+.site-nav .link.current {
+  color: var(--accent-color);
+  position: relative;
+}
+
+.site-nav.list .benefits {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  display: block;
+}
+
+.site-nav.list .type {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
 /*Site navigation footer*/
 
 .nav-footer {
@@ -176,15 +215,16 @@ img {
   color: var(--accent-color);
 }
 
-.section-title {
-  color: #212121;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  font-size: 14px;
-  text-transform: uppercase;
-  margin-top: 0%;
-  margin-bottom: 10px;
+.page-footer {
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+/*Buttons*/
 
 .button.primary {
   color: var(--title-header);
@@ -241,17 +281,6 @@ img {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.site-nav .link.current {
-  color: var(--accent-color);
-  position: relative;
-}
-
-.site-nav.list .benefits {
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
-  display: block;
-}
 /* Section team */
 
 .section.team {
@@ -305,12 +334,7 @@ img {
   padding: 30px;
 }
 
-.site-nav.list .type {
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.03em;
-  color: #757575;
-}
+/*Heade*/
 
 .main-header {
   font-weight: 900;
@@ -344,6 +368,9 @@ img {
 .header-contacts.list .link:focus {
   color: var(--accent-color);
 }
+
+/*Hero section*/
+
 .hero {
   text-align: center;
   padding: 200px 0;
@@ -374,6 +401,8 @@ img {
   font-style: normal;
 }
 
+/*Portfolio title*/
+
 .portfolio-title {
   font-size: 18px;
   line-height: 2;
@@ -387,18 +416,6 @@ img {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: #757575;
-}
-
-.link {
-  text-decoration: none;
-}
-
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .page-header {
@@ -420,7 +437,7 @@ img {
   margin-left: 50px;
 }
 
-.header.nav {
+.header-nav {
   display: flex;
   align-items: center;
 }
@@ -435,6 +452,8 @@ img {
   display: flex;
   align-items: center;
 }
+
+/*Benefits*/
 
 .benefits-of-company {
   width: 270px;
@@ -773,11 +792,6 @@ img {
 }
 
 /*Registration form*/
-
-input,
-textarea {
-  outline: transparent;
-}
 
 .form-title {
   display: block;
