@@ -203,7 +203,7 @@ img {
   height: 50px;
   border: none;
   cursor: pointer;
-  transition-property: color;
+  transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -626,7 +626,6 @@ img {
 
 .container.footer {
   display: flex;
-  gap: 70px;
   align-items: baseline;
 }
 
@@ -828,11 +827,12 @@ textarea {
 
 .form-icon {
   position: absolute;
-  bottom: 14px;
+  bottom: 11px;
   left: 15px;
 }
 
 .form-message {
+  display: block;
   width: 100%;
   height: 120px;
   resize: none;
@@ -881,7 +881,7 @@ textarea {
 .form-agreement-text {
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.71px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
   user-select: none;
@@ -926,12 +926,14 @@ textarea {
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border: none;
 }
 
 .form-agreement-footer {
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.88px;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
@@ -946,15 +948,13 @@ textarea {
 .form-subscribe-footer {
   width: 358px;
   height: 50px;
+  padding: 0 16px;
+  margin-right: 12px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: #2f303a;
   color: #ffffff;
-}
-
-.first-cta-block {
-  margin-right: 23px;
 }
 
 .form-input:focus,
@@ -970,4 +970,13 @@ textarea {
 .form-message:hover,
 .form-message:focus {
   border: 1px solid #2196f3;
+}
+
+.first-cta-block {
+  margin-left: 70px;
+  margin-right: auto;
+}
+
+.subscribe {
+  display: flex;
 }
